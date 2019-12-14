@@ -16,4 +16,9 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release sources
     - name: Run Unit Tests
-      run: dotnet test sources
+      run: dotnet test sources /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:Threshold=80 /p:CoverletOutput=TestResults/
+    - name: Export code coverage to Codecov
+      uses: codecov/codecov-action@v1.0.3
+      with:
+        token: bbe64927-abbe-4682-8a5b-96ef462569ad
+        file: sources/Orwel.Configuration.Hook.UnitTests/TestResults/coverage.opencover.xml
