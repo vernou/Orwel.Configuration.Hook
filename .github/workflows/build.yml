@@ -21,4 +21,4 @@ jobs:
       uses: codecov/codecov-action@v1.0.3
       with:
         token: bbe64927-abbe-4682-8a5b-96ef462569ad
-        file: sources/TextDataBuilder.UnitTests/TestResults/coverage.opencover.xml
+        file: sources/Orwel.Configuration.Hook/TestResults/coverage.opencover.xml
