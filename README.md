@@ -46,3 +46,13 @@ WebHost.CreateDefaultBuilder(args)
     .ConfigureAppConfiguration((host, config) => config.Hook(Hook))
     .UseStartup<Startup>();
 ```
+
+## Contributing to this project
+
+Anyone and everyone is welcome to contribute. Please take a moment to
+review the [guidelines for contributing](CONTRIBUTING.md).
+
+* [Ask a question](CONTRIBUTING.md#questions)
+* [Bug reports](CONTRIBUTING.md#bug-reports)
+* [Feature requests](CONTRIBUTING.md#feature-requests)
+* [Pull requests](CONTRIBUTING.md#pull-requests)
